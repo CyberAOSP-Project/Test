@@ -14,7 +14,7 @@
  * under the License.
  */
 
-package com.android.settings.arrow;
+package com.android.settings.cyber;
 
 import android.app.Activity;
 import android.content.Context;

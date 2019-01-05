@@ -15,7 +15,7 @@
  */
 
 
-package com.android.settings.arrow;
+package com.android.settings.cyber;
 
 import android.app.Activity;
 import android.content.ContentResolver;
@@ -39,7 +39,7 @@ import android.support.v14.preference.SwitchPreference;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
-import com.android.settings.arrow.Utils;
+import com.android.settings.cyber.Utils;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -113,7 +113,7 @@ public class Weather extends SettingsPreferenceFragment
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.ARROW;
+        return MetricsEvent.CYBER;
     }
 
     @Override

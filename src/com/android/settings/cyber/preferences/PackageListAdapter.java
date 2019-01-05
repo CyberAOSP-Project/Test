@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.arrow.preferences;
+package com.android.settings.cyber.preferences;
 
 import android.content.Context;
 import android.content.Intent;

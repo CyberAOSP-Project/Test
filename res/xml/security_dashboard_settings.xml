@@ -98,8 +98,8 @@
 
         <PreferenceScreen 
 	    android:key="stats_trigger"
-	    android:title="@string/arrow_stats_title"
-	    android:summary="@string/arrow_stats_summary">
+	    android:title="@string/cyber_stats_title"
+	    android:summary="@string/cyber_stats_summary">
 		<intent
                      android:action="android.intent.action.MAIN"
                      android:targetPackage="android.romstats"
@@ -118,7 +118,7 @@
             android:summary="@string/show_password_summary"
             settings:controller="com.android.settings.security.ShowPasswordPreferenceController"/>
 
-        <com.android.settings.arrow.preferences.SecureSettingSwitchPreference
+        <com.android.settings.cyber.preferences.SecureSettingSwitchPreference
             android:key="face_auto_unlock"
             android:title="@string/face_auto_unlock_title"
             android:summary="@string/face_auto_unlock_summary"

@@ -27,7 +27,7 @@ import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
 
-import com.android.internal.util.arrow.ArrowUtils;
+import com.android.internal.util.cyber.CyberUtils;
 import com.android.settings.R;
 import com.android.settings.core.BasePreferenceController;
 import com.android.settings.core.PreferenceControllerMixin;
@@ -61,7 +61,7 @@ public class DoubleTapPowerFlashlightPreferenceController extends BasePreference
 
     @Override
     public int getAvailabilityStatus() {
-        return ArrowUtils.deviceHasFlashlight(mContext)
+        return CyberUtils.deviceHasFlashlight(mContext)
                 ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
     }
 

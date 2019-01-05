@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.arrow;
+package com.android.settings.cyber;
 
 import android.content.ContentResolver;
 import android.os.Bundle;
@@ -39,7 +39,7 @@ public class StockRecentCategory extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.ARROW;
+        return MetricsEvent.CYBER;
     }
 
     @Override

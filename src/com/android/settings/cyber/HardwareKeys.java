@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.android.settings.arrow;
+package com.android.settings.cyber;
 
 import android.content.ContentResolver;
 import android.content.res.Resources;
@@ -38,10 +38,10 @@ import com.android.settings.Utils;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.internal.util.hwkeys.ActionConstants;
 import com.android.internal.util.hwkeys.ActionUtils;
-import com.android.settings.arrow.preferences.ActionFragment;
-import com.android.settings.arrow.preferences.CustomSeekBarPreference;
-import com.android.settings.arrow.preferences.SystemSettingSwitchPreference;
-import com.android.internal.util.arrow.ArrowUtils;
+import com.android.settings.cyber.preferences.ActionFragment;
+import com.android.settings.cyber.preferences.CustomSeekBarPreference;
+import com.android.settings.cyber.preferences.SystemSettingSwitchPreference;
+import com.android.internal.util.cyber.CyberUtils;
 
 public class HardwareKeys extends ActionFragment implements Preference.OnPreferenceChangeListener {
     private static final String HWKEY_DISABLE = "hardware_keys_disable";
@@ -106,7 +106,7 @@ public class HardwareKeys extends ActionFragment implements Preference.OnPrefere
         mButtonTimoutBar.setOnPreferenceChangeListener(this);
 
         mEnableNavBar = (SwitchPreference) prefScreen.findPreference(KEYS_SHOW_NAVBAR_KEY);
-        boolean showNavBarDefault = ArrowUtils.deviceSupportNavigationBar(getActivity());
+        boolean showNavBarDefault = CyberUtils.deviceSupportNavigationBar(getActivity());
         boolean showNavBar = Settings.System.getInt(resolver,
                 Settings.System.OMNI_NAVIGATION_BAR_SHOW, showNavBarDefault ? 1 : 0) == 1;
         mEnableNavBar.setChecked(showNavBar);
@@ -259,7 +259,7 @@ public class HardwareKeys extends ActionFragment implements Preference.OnPrefere
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.ARROW;
+        return MetricsProto.MetricsEvent.CYBER;
     }
 }
 

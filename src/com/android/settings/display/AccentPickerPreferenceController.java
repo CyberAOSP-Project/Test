@@ -29,9 +29,9 @@ import com.android.settingslib.core.lifecycle.Lifecycle;
 import com.android.settingslib.core.lifecycle.LifecycleObserver;
 import com.android.settingslib.core.lifecycle.events.OnResume;
 
-import com.android.settings.arrow.AccentPicker;
+import com.android.settings.cyber.AccentPicker;
 
-import com.android.internal.util.arrow.ArrowUtils;
+import com.android.internal.util.cyber.CyberUtils;
 
 public class AccentPickerPreferenceController extends AbstractPreferenceController
         implements PreferenceControllerMixin, LifecycleObserver, OnResume {
@@ -55,7 +55,7 @@ public class AccentPickerPreferenceController extends AbstractPreferenceControll
     @Override
     public void displayPreference(PreferenceScreen screen) {
         mAccentPickerPref  = (Preference) screen.findPreference(KEY_ACCENT_PICKER_FRAGMENT_PREF);
-        if (!ArrowUtils.isPackageInstalled(mContext, SUBS_PACKAGE)) {
+        if (!CyberUtils.isPackageInstalled(mContext, SUBS_PACKAGE)) {
             mAccentPickerPref.setEnabled(true);
         } else {
             mAccentPickerPref.setEnabled(false);
@@ -87,7 +87,7 @@ public class AccentPickerPreferenceController extends AbstractPreferenceControll
             new OnPreferenceClickListener() {
                 @Override
                 public boolean onPreferenceClick(Preference preference) {
-                   if (!ArrowUtils.isPackageInstalled(mContext, SUBS_PACKAGE)) {
+                   if (!CyberUtils.isPackageInstalled(mContext, SUBS_PACKAGE)) {
                         AccentPicker.show(mParent);
                         return true;
                    } else {
@@ -99,7 +99,7 @@ public class AccentPickerPreferenceController extends AbstractPreferenceControll
 
     public void updateSummary() {
         if (mAccentPickerPref != null) {
-            if (!ArrowUtils.isPackageInstalled(mContext, SUBS_PACKAGE)) {
+            if (!CyberUtils.isPackageInstalled(mContext, SUBS_PACKAGE)) {
                 mAccentPickerPref.setSummary(mContext.getString(
                         com.android.settings.R.string.theme_accent_picker_summary));
             } else {

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.arrow;
+package com.android.settings.cyber;
 
 import android.os.Bundle;
 import android.support.v7.preference.PreferenceCategory;
@@ -124,7 +124,7 @@ public class PowerMenu extends SettingsPreferenceFragment implements Preference.
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.ARROW;
+        return MetricsProto.MetricsEvent.CYBER;
     }
 
 

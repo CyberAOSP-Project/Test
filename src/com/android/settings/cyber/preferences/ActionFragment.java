@@ -17,7 +17,7 @@
  * class that holds target widget state
  */
 
-package com.android.settings.arrow.preferences;
+package com.android.settings.cyber.preferences;
 
 import java.util.ArrayList;
 
@@ -28,9 +28,9 @@ import com.android.internal.util.hwkeys.Config;
 import com.android.internal.util.hwkeys.Config.ActionConfig;
 import com.android.internal.util.hwkeys.Config.ButtonConfig;
 
-import com.android.settings.arrow.preferences.ShortcutPickHelper;
-import com.android.settings.arrow.preferences.ActionPreference;
-import com.android.settings.arrow.preferences.CustomActionListAdapter;
+import com.android.settings.cyber.preferences.ShortcutPickHelper;
+import com.android.settings.cyber.preferences.ActionPreference;
+import com.android.settings.cyber.preferences.CustomActionListAdapter;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -165,7 +165,7 @@ public class ActionFragment extends SettingsPreferenceFragment implements
         switch (dialogId) {
             case DIALOG_CATEGORY:
             case DIALOG_CUSTOM_ACTIONS:
-                return MetricsEvent.ARROW;
+                return MetricsEvent.CYBER;
             default:
                 return 0;
         }
@@ -256,6 +256,6 @@ public class ActionFragment extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.ARROW;
+        return MetricsProto.MetricsEvent.CYBER;
     }
 }

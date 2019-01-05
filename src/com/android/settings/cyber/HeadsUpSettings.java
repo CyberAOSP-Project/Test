@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.arrow;
+package com.android.settings.cyber;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -40,8 +40,8 @@ import android.widget.ListView;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.arrow.preferences.PackageListAdapter;
-import com.android.settings.arrow.preferences.PackageListAdapter.PackageItem;
+import com.android.settings.cyber.preferences.PackageListAdapter;
+import com.android.settings.cyber.preferences.PackageListAdapter.PackageItem;
 import android.provider.Settings;
 
 import java.util.ArrayList;
@@ -165,13 +165,13 @@ public class HeadsUpSettings extends SettingsPreferenceFragment
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.ARROW;
+        return MetricsProto.MetricsEvent.CYBER;
     }
 
     @Override
     public int getDialogMetricsCategory(int dialogId) {
         if (dialogId == DIALOG_STOPLIST_APPS || dialogId == DIALOG_BLACKLIST_APPS ) {
-            return MetricsProto.MetricsEvent.ARROW;
+            return MetricsProto.MetricsEvent.CYBER;
         }
         return 0;
     }

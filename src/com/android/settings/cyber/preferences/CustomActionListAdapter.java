@@ -16,7 +16,7 @@
  * Adapter for displaying custom actions in a list
  */
 
-package com.android.settings.arrow.preferences;
+package com.android.settings.cyber.preferences;
 
 import java.util.ArrayList;
 import java.util.List;

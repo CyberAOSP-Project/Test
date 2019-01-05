@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2018 ArrowOS
+ * Copyright (C) 2018 CyberAOSP
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.android.settings.arrow;
+package com.android.settings.cyber;
 
 import android.content.ContentResolver;
 import android.content.res.Resources;
@@ -27,11 +27,11 @@ import android.provider.Settings;
 
 import com.android.internal.logging.nano.MetricsProto;
 
-import com.android.settings.arrow.preferences.SystemSettingSwitchPreference;
+import com.android.settings.cyber.preferences.SystemSettingSwitchPreference;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-import com.android.settings.arrow.margaritov.preference.colorpicker.ColorPickerPreference;
+import com.android.settings.cyber.margaritov.preference.colorpicker.ColorPickerPreference;
 
 public class BatteryLightSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
@@ -101,7 +101,7 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.ARROW;
+        return MetricsProto.MetricsEvent.CYBER;
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {

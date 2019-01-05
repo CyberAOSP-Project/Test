@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.arrow;
+package com.android.settings.cyber;
 
 import com.android.internal.logging.nano.MetricsProto;
 
@@ -41,8 +41,8 @@ import android.text.TextUtils;
 import android.view.View;
 
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.arrow.preferences.CustomSeekBarPreference;
-import com.android.settings.arrow.preferences.SystemSettingSwitchPreference;
+import com.android.settings.cyber.preferences.CustomSeekBarPreference;
+import com.android.settings.cyber.preferences.SystemSettingSwitchPreference;
 import com.android.settings.Utils;
 import android.util.Log;
 
@@ -103,7 +103,7 @@ public class Traffic extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.ARROW;
+        return MetricsProto.MetricsEvent.CYBER;
     }
 }
 
