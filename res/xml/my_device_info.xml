@@ -181,7 +181,6 @@
         android:summary="@string/summary_placeholder"
         settings:allowDividerAbove="true"/>
 
-<<<<<<< HEAD
     <!-- SELinux status information -->
     <Preference
         android:key="selinux_status"
@@ -190,6 +189,4 @@
         android:summary="@string/selinux_status_enforcing"
         android:selectable="false"/>
 
-=======
->>>>>>> 2e9a9c7fe8426e7f052a62621f7ae81d649fc05b
 </PreferenceScreen>
